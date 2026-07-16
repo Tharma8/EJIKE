@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Planner | Ejike Emmanuel David</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">Ejike</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="planner.html" class="active">Planner</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content-section planner-section reveal">
+        <h1>Academic Task Planner</h1>
+        <p>Stay organized with a clean, focused system for assignments, deadlines, study blocks, and academic responsibilities. This planner helps turn a busy schedule into a clear and manageable routine.</p>
+
+        <form id="taskForm" class="planner-form">
+          <label for="taskInput">New task</label>
+          <div class="task-input-row">
+            <input id="taskInput" name="task" type="text" placeholder="Add a task" />
+            <button class="button" type="submit">Add Task</button>
+          </div>
+        </form>
+
+        <ul id="taskList" class="task-list"></ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Ejike Emmanuel David. Designed with care and precision.</p>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <script src="app.js"></script>
+  </body>
+</html>
