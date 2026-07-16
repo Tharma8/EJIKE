@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Ejike Emmanuel David</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">Ejike</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="planner.html">Planner</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content-section reveal">
+        <h1>Let’s Connect</h1>
+        <p>Whether you want to discuss a project, offer feedback, or simply say hello, I would love to hear from you.</p>
+
+        <div class="contact-layout">
+          <form id="contactForm" class="contact-form">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" />
+
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" />
+
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="08012345678" />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+            <button class="button" type="submit">Send Message</button>
+            <div id="formErrors" class="message error" aria-live="polite"></div>
+            <div id="formSuccess" class="message success" aria-live="polite"></div>
+          </form>
+
+          <div class="service-card contact-card">
+            <h2>Contact Details</h2>
+            <p>Email: ejikeemmanuel@example.com</p>
+            <p>Location: Lagos, Nigeria</p>
+            <p>Availability: Open for collaborations and learning opportunities</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Ejike Emmanuel David. Designed with care and precision.</p>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <script src="app.js"></script>
+  </body>
+</html>
